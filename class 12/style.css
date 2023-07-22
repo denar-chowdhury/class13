@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maindiv{
+    width: 1080px;
+    height: 2000px;
+    margin: auto;
+}
+<a href="https://ibb.co/QrT7sMQ"><img src="https://i.ibb.co/J5GWXHt/young-mens.jpg" alt="young-mens" border="0"></a>
+
+/* -----------heder------------ */
+
+.heder{
+
+}
+.heder ul{
+    background-color: black;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.heder ul li{
+    display: inline-block;
+    margin-left: -4px;
+    position: relative;
+
+
+}
+
+.heder ul li:hover > a{
+    background-color: #3c72db;
+}
+.heder ul li a{
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    padding: 15px 25px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+/* .heder ul li ul li:hover{
+    background-color: #3c72db;
+    
+
+} */
+
+/* -------1sthover------ */
+
+.heder ul li{
+    position: relative;
+
+}
+
+.heder ul li ul{
+    width: 200px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 67px;
+    left: 0;
+    border-top: 4px solid #3c72db;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+
+
+}
+.heder ul li:hover ul{
+    background-color: rgba(0, 0, 0, .8);
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+
+}
+.heder ul li ul li{
+    display: block;
+    margin-left: 0;
+    padding: 0;
+    border-top: 1px solid rgb(41, 40, 40);
+}
+.heder ul li ul li:first-child{
+    border-top: none;
+}
+
+.heder ul li ul li a{
+    display: block;
+}
+
+/* 2nd part */
+
+.heder ul li ul li{
+    position: relative;
+}
+.heder ul li ul.first li ul.Secend{
+    width: 200px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    border-top: 4px solid #3c72db;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.heder ul li ul.first li:nth-child(2):hover ul.Secend{
+    background-color: rgba(0, 0, 0, .8);
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.heder ul li ul li ul li{
+    display: block;
+}
+.heder ul li ul li ul li a{
+    display: block;
+}
+
+
+/* ----------Bener------------ */
+.benerdiv{
+    text-align: center;
+    background-image: url(https://i.ibb.co/J5GWXHt/young-mens.jpg);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+.benerdiv img{
+    width: 100%;
+
+}
+
+.bener2 span{
+    background-color: #ffffff;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 800;
+    word-spacing: 10px;
+    
+}
+
+.benerdiv p{
+    background-color: #ffffff;
+    margin: 0px 20px;
+    font-size: 15px;
+    display: block;
+    margin-top: 30px;
+}
+
+.bener2{
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+}
+.bener2 button{
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid red;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.bener2 button:hover{
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+}
+
+/* out */
+.out{
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 50px 0px;
+}
+.out ul li{
+    padding: 10px 0px;
+}
+
+/* in */
+
+.in{
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    padding: 50px 0px;
+    list-style: inside;
+    box-shadow: 0px 0px 10px -2px black;
+}
+.in ul li{
+    padding: 10px 0px;
+}
+
+/* -----input----- */
+.inputdiv{
+    text-align: center;
+    margin: 20px 0px;
+    padding: 50px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 0px 10px -2px black;
+}
+.inputdiv input {
+    display: inline-block;
+    /* padding: 10px 200px; */
+    border: 2px solid red;
+    text-align: left;
+    height: 35px;
+    width: 500px;
+    padding: 0px 10px;
+}
+.inputdiv button{
+    background-color: red;
+    padding: 10px 50px;
+    border: 2px solid red;
+    font-weight: 600;
+    margin-left: -6px;
+    color: white;
+}
+.inputdiv button:hover{
+    background-color: #fff;
+    color: black;
+    transition: .5s;
+}
+
+/* style */
+.style{
+    padding: 80px 0px;
+    border: 2px dotted gold;
+}
+.style h1{
+    text-align: center;
+}
+
+.style .styleul1{
+    margin-left: 50px;
+    list-style: lower-roman;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.style .styleul2{
+    margin-left: 50px;
+    list-style: square;
+    font-size: 18px;
+    display: inline-block;
+}
+.style .styleul3{
+    margin-left: 50px;
+    display: inline-block;
+    list-style: lower-greek;
+    font-size: 18px;
+}
+
+/* ------sicial-------- */
+.footer{
+    background-color: black;
+    padding: 30px 0;
+}
+.footer p{
+    color: white;
+    text-align: center;
+}
+.footer .sociel ul{
+    margin-top: 20px;
+    text-align: center;
+}
+.footer .sociel ul li{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color:#5ea5fa;
+    line-height: 50px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.footer .sociel ul li:hover{
+    background-color: #fff;
+    transition: .5s;
+}
+.footer .sociel ul li a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+}
